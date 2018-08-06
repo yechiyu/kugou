@@ -22,7 +22,11 @@
             <div id="player-information-name-subtitle" class="border">张碧晨</div>
         </div>
         <div id="player-information-music" class="border">
-            <div style="background-image: url(../../picture/stop.svg)"></div>
+            <div id="stop" style="background-image: url(../../picture/stop.svg);display: none;">
+            </div>
+            <div id="view" style="background-image: url(../../picture/view.svg);">
+                <audio class="audio-content" src="../audio/nl.mp3"></audio>
+            </div>
             <div style="background-image: url(../../picture/next.svg)"></div>
             <div id="list" style="background-image: url(../../picture/list.svg)"></div>
         </div>
@@ -336,5 +340,36 @@
     $("#play-list-bottom").click(function(){
         $("#play-list").css("bottom","-400px");
     });
+
+    // $("#player-simple-cover img").addClass("player-play")
+
+    $("#stop").click(function(){
+        $("#stop").hide();
+
+        $("#view").show();
+        $("#player-scrollbar-cover").hide();
+
+        $("#player-scrollbar-cover-circle").hide();
+        $("#view").children("audio")[0].pause();
+        $("#player-simple-cover img").removeClass("player-play");
+        $("#player-scrollbar-cover").removeClass("player-play-s");
+
+    });
+
+    $("#view").click(function(){
+        $("#view").hide();
+        $("#stop").show();
+        $(this).children("audio")[0].play();
+        $("#player-scrollbar-cover").show();
+
+        $("#player-scrollbar-cover-circle").show();
+
+        $("#player-simple-cover img").addClass("player-play");
+
+        $("#player-scrollbar-cover").addClass("player-play-s");
+
+    });
+
+
 
 </script>
