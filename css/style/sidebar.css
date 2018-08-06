@@ -1,0 +1,85 @@
+
+#tj{
+    display: none;
+}
+
+
+#title section label {
+    position: absolute; left: 20%; top: 100px;
+
+    cursor: pointer; text-transform: uppercase;
+
+}
+
+#sidebar{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    position: absolute;
+    left: -500px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 20;
+    transition: all  .36s linear;
+}
+
+.sidebar-style{
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+#sidebar hr{
+    width: 90%;
+    margin-left: 10px;
+    background-color: #cdcdcd;
+}
+
+#sidebar-base{
+    margin-top: 60px;
+    flex: 1;
+}
+
+#sidebar-control{
+    flex: 1;
+}
+
+#sidebar-notice{
+    height: 30px;
+}
+
+#sidebar-setting{
+    height: 30px;
+}
+
+#sidebar a{
+    height: 20px;
+    margin: 5px 10px 5px 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: #212121;
+    font-weight: 400;
+}
+
+a img{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+
+a p{
+    height: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5px;
+}

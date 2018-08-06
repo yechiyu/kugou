@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酷狗音乐</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../css/style/signal.css">
+    <link rel="stylesheet" href="../../css/style/common.css">
+    <link rel="stylesheet" href="../../css/style/chat.css">
+</head>
+<body>
+
+
+<div id="comainer" style="justify-content: flex-start;">
+
+
+    <!-- signal start -->
+    <div id="signal" class="border">
+        <div id="signal-left" class="border">
+            <div id="signal-area" class="border">
+                <div class="signal-ok"></div>
+                <div class="signal-ok"></div>
+                <div class="signal-lose"></div>
+                <div class="signal-lose"></div>
+            </div>
+            <div id="operation" class="border">中国移动</div>
+            <div id="xg">4G</div>
+        </div>
+        <div id="signal-center" class="xy-center border">下午4.48</div>
+        <div id="signal-right" class="border">
+            <div id="mettary" class="border">
+                <div id="mettary-body" class="border">
+                    <div id="mettary-charge"></div>
+                </div>
+                <div id="mettary-head"></div>
+            </div>
+        </div>
+    </div>
+    <!-- signal end -->
+
+
+    <!-- notice start -->
+    <div id="notice" class="border">
+
+        <a href="../news/news.html" style="text-decoration: none">
+            <div id="notice-left" class="xy-center border">
+                <img src="../../picture/left.svg" alt="休假">
+            </div>
+        </a>
+
+
+        <div id="notice-center" class="border">机器人</div>
+
+        <div id="notice-right" class="border">
+        </div>
+
+    </div>
+    <!--notice end-->
+
+    <div id="chat">
+    </div>
+
+    <div id="chat-input">
+        <input type="text" id="text">
+        <input type="button" id="button" value="发送">
+    </div>
+
+</div>
+
+</body>
+</html>
+<script src="../../js/jquery.js"></script>
+
+<script>
+    $(function() {
+
+        var key = "9c5c1fcd3b7f4838b4dbc0b952343d68";
+        var url = "http://www.tuling123.com/openapi/api";   //openAPI
+
+        $('#button').click(function() {  //当点击时
+
+            var info = {
+                "key": key,
+                "info": $("#text").val()
+            }   //向图灵 发送 聊天数据     .val  =  value
+
+            //生成自己的聊天内容
+            var self = $("<div class='chat-right'><div class='chat-right-text'>"+$("#text").val()+"</div><div class='chat-right-img'></div></div>");
+            $("#chat").append(self);
+
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: info,
+                dataType: "json",
+                success: function(result) {
+
+                    var robot = $("<div class='chat-left'><div class='chat-left-img'></div><div class='chat-right-text'>"+result.text +"</div></div>");
+
+
+
+                    $("#chat").append(robot);
+
+                }
+            });
+
+        })
+
+    })
+
+
+</script>

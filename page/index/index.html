@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酷狗音乐</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../css/style/signal.css">
+    <link rel="stylesheet" href="../../css/style/common.css">
+    <link rel="stylesheet" href="../../css/style/title.css">
+    <link rel="stylesheet" href="../../css/style/sidebar.css">
+</head>
+<body>
+
+<div id="comainer">
+
+
+    <!-- signal start -->
+    <div id="signal" class="border">
+        <div id="signal-left" class="border">
+            <div id="signal-area" class="border">
+                <div class="signal-ok"></div>
+                <div class="signal-ok"></div>
+                <div class="signal-lose"></div>
+                <div class="signal-lose"></div>
+            </div>
+            <div id="operation" class="border">中国移动</div>
+            <div id="xg">4G</div>
+        </div>
+        <div id="signal-center" class="xy-center border">下午4.48</div>
+        <div id="signal-right" class="border">
+            <div id="mettary" class="border">
+                <div id="mettary-body" class="border">
+                    <div id="mettary-charge"></div>
+                </div>
+                <div id="mettary-head"></div>
+            </div>
+        </div>
+    </div>
+    <!-- signal end -->
+
+
+
+    <!-- sidebar start-->
+
+    <div id="sidebar">
+        <div id="sidebar-base" class="sidebar-style border">
+            <a href="../news/news.html" class=""><img src="../../picture/msg1.svg" alt="休假" class=""><p class="">消息中心</p></a>
+            <a href="#" class=""><img src="../../picture/skin.svg" alt="休假" class=""><p class="">皮肤中心</p></a>
+            <a href="#" class=""><img src="../../picture/diamond.svg" alt="休假" class=""><p class="">会员中心</p></a>
+            <a href="#" class=""><img src="../../picture/gift.svg" alt="休假" class=""><p class="">流量包月</p></a>
+            <a href="#" class=""><img src="../../picture/dish.svg" alt="休假" class=""><p class="">私人云盘</p></a>
+        </div>
+        <hr>
+        <div id="sidebar-control" class="sidebar-style border">
+            <a href="#" class=""><img src="../../picture/timing.svg" alt="休假" class=""><p class="">定时关闭</p></a>
+            <a href="#" class=""><img src="../../picture/snake.svg" alt="休假" class=""><p class="">蝰蛇音效</p></a>
+            <a href="#" class=""><img src="../../picture/know.svg" alt="休假" class=""><p class="">听歌识曲</p></a>
+            <a href="#" class=""><img src="../../picture/tool.svg" alt="休假" class=""><p class="">音乐工具</p></a>
+            <a href="#" class=""><img src="../../picture/smallmell.svg" alt="休假"><p class="">个性彩铃</p></a>
+        </div>
+        <hr>
+        <div id="sidebar-notice" class="sidebar-style border">
+            <a href="#" class=""><img src="../../picture/board.svg" alt="休假"><p>通知栏歌词</p></a>
+        </div>
+        <hr>
+        <div id="sidebar-setting" class="sidebar-style border">
+            <a href="#"><img src="../../picture/set.svg" alt="休假"><p>设置/退出</p></a>
+        </div>
+    </div>
+
+    <!-- sidebar end -->
+
+
+
+    <!-- title start -->
+    <div id="title" class="border">
+        <div id="title-left" class="border">
+            <div id="three-line" class="xy-center border">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id="title-center" class="border">
+            <div id="me" class="title-center-menu" data-send="../me/me.html">我</div>
+            <div id="listen" class="title-center-menu" data-send="../listen/listen.html">听</div>
+            <div id="look" class="title-center-menu" data-send="../look/look.html">看</div>
+            <div id="sing" class="title-center-menu" data-send="../song/song.html">唱</div>
+        </div>
+        <div id="title-right" class="border">
+            <div id="mcphone"></div>
+        </div>
+    </div>
+    <!-- title end -->
+
+
+    <div id="content" class="border"></div>
+
+
+
+
+
+
+
+    <!-- player-simple start -->
+
+    <div id="player-simple" class="border"></div>
+
+    <!-- player-simple end -->
+
+
+</div>
+
+</body>
+</html>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/router.js"></script>
+
+
+
+
+<script>
+    $("#three-line").click(function(){
+        $("#sidebar").css("left","0px");
+
+        $("#signal").css("color","black");
+        $("#mettary-body").css("border-color","black");
+        $("#mettary-head").css("background-color","black");
+        $(".signal-ok").css("background-color","black");
+
+    });
+
+    $("#sidebar-setting").click(function(){
+        $("#sidebar").css("left","-800px");
+        $("#signal").css("color","white");
+        $("#mettary-body").css("border-color","white");
+        $("#mettary-head").css("background-color","white");
+        $(".signal-ok").css("background-color","white");
+
+    });
+
+
+
+
+</script>

@@ -1,0 +1,321 @@
+/* search start */
+
+#search{
+    height: 50px;
+    background-color: deepskyblue;
+}
+
+#search-bg{
+    width: 95%;
+    height: 28px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 40px;
+}
+
+#search-magnifier{
+    width: 15px;
+    height: 15px;
+    background-image: url(../../picture/magnifier.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#search-content{
+    font-size: 14px;
+    color: #e6e6e6;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+/* search end */
+
+
+
+
+/* song-scroll start */
+#song-scroll{
+    flex: 1;
+    overflow: scroll;
+    /*display: flex;*/
+    /*flex-flow: column nowrap;*/
+    /*justify-content: flex-start;*/
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+}
+/* song-scroll end */
+
+
+
+
+
+/* song-menu start */
+#song-menu{
+    height: 130px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.song-menu-button{
+    width: 80px;
+    height: 90px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song-menu-button-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.song-menu-button-icon img{
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.song-menu-button-text{
+    width: 60px;
+    height: 25px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* song-menu end */
+
+/* song-head_list start */
+
+#song-head_list{
+    height: 45px;
+    border-bottom: 5px solid;
+    border-color: rgba(205,205,205,0.35);
+    /*background-color: white;*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#song-head_list-left{
+    height: 18px;
+    width: 40px;
+    margin-left: 5px;
+    background-color: crimson;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#song-head_list-left img{
+    height: 18px;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#song-head_list-center{
+    flex: 1;
+    height: 18px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0px 25px 0px 10px;
+    border-right: 1px solid #cdcdcd;
+}
+
+#song-head_list-right{
+    height: 18px;
+    width: 30px;
+    background-image: url(../../picture/envelop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* song-head_list end */
+
+#song-content{
+    flex: 1;
+    /*background-color: white;*/
+    display: flex;
+    flex-flow: column nowrap;
+    /*justify-content: flex-start;*/
+    /*overflow: scroll;*/
+}
+
+
+#song-content-menu{
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.song-content-menu-button{
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* song-content start */
+
+
+
+#song-content-search{
+    height: 50px;
+}
+
+#song-content-search-bg{
+    width: 95%;
+    height: 28px;
+    background-color: rgba(128,128,128,0.1);
+    border-radius: 40px;
+}
+
+#song-content-search-content{
+    font-size: 12px;
+    color: deepskyblue;
+    font-weight: 200;
+    margin-left: 5px;
+}
+
+#song-search-bottom{
+    margin-left: 5px;
+    font-size: 8px;
+    height: 25px;
+    line-height: 25px;
+    color: #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+#song-content-slip{
+    height: 250px;
+    /*display: flex;*/
+    /*flex-flow: column nowrap;*/
+    /*justify-content: flex-start;*/
+    /*align-items: center;*/
+    /*overflow: scroll;*/
+}
+
+.song-content-slip-msg{
+    height: 250px;
+    width: 95%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+.song-content-slip-msg-title{
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song-content-slip-msg-title-left{
+    flex: 1;
+    height: 35px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.song-content-slip-msg-title-left-icon{
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.song-content-slip-msg-title-left-name{
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.song-content-slip-msg-title-left-sex{
+    height: 15px;
+    width: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.song-content-slip-msg-title-right{
+    width: 60px;
+    height: 22px;
+    border: 1px solid deepskyblue;
+    border-radius: 15px;
+    font-size: 8px;
+    font-weight: 300;
+    color: deepskyblue;
+}
+
+.song-content-slip-msg-subtitle{
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.song-content-slip-msg-music{
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.song-content-slip-msg-function{
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 8px;
+    color: #cdcdcd;
+}
+
+.song-content-slip-msg-function-option{
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-content-slip-msg-function img{
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.song-content-slip-msg-solid{
+    height: 5px;
+    width: 100%;
+    background-color: rgba(205,205,205,0.35);
+}

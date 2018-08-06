@@ -1,0 +1,129 @@
+#look-content-mv-title{
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#look-content-mv-title div{
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#look-content-mv-title-left{
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+
+#look-content-mv-title-right{
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+
+#look-content-mv-text{
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.look-content-mv-text-msg{
+    width: 100%;
+    height: 280px;
+    border-bottom: 5px solid;
+    border-color: rgba(205,205,205,0.35);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.look-content-mv-text-msg-img{
+    width: 95%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.look-content-mv-text-msg-title{
+    width: 95%;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.look-content-mv-text-msg-subtitle{
+    width: 95%;
+    height: 35px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.look-content-mv-text-msg-subtitle-left{
+    flex: 1;
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 10px;
+    color: #cdcdcd;
+}
+
+.look-content-mv-text-msg-subtitle-left img{
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.look-content-mv-text-msg-subtitle-right{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.look-content-mv-text-msg-subtitle-right-comment{
+    width: 20px;
+    height: 20px;
+    color: #cdcdcd;
+    font-size: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.look-content-mv-text-msg-subtitle-right-comment img{
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.look-content-mv-text-msg-subtitle-right-spot{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.look-content-mv-text-msg-subtitle-right-spot div{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #cdcdcd;
+}

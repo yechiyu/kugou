@@ -1,0 +1,132 @@
+#play-list{
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -400px;
+    background-color: white;
+    z-index: 25;
+    transition: bottom .5s linear;
+}
+
+
+#play-list-top {
+   height: 50px;
+    border-bottom: 1px solid #cdcdcd;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#play-list-top-left{
+    height: 18px;
+    width: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 15px;
+}
+
+#play-list-top-right{
+    flex: 1;
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#play-list-top-right-content{
+    flex: 1;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    /*margin-left: 5px;*/
+}
+
+#play-list-top-right-delete{
+    height: 25px;
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+#play-list-center{
+    height: 300px;
+    overflow: scroll;
+}
+
+.play-list-center-msg{
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-list-center-msg-left{
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.play-list-center-msg-right{
+    flex: 1;
+    height: 50px;
+    border-bottom: 1px solid #cdcdcd;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.play-list-center-msg-content{
+    height: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.play-list-center-msg-content-title{
+    height: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.play-list-center-msg-content-subtitle{
+    height: 30px;
+    font-size: 8px;
+    color: #cdcdcd;
+    line-height: 15px;
+}
+
+.play-list-center-msg-delete{
+    height: 25px;
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+
+#play-list-bottom{
+    height: 50px;
+    border-top: 1px solid #cdcdcd;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+

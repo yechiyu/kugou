@@ -1,0 +1,84 @@
+/* title start */
+#title{
+    height: 40px;
+    /*background-color: deepskyblue;*/
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+
+.title-center-menu{
+    transition: all .3s linear;
+}
+
+.title-center-menu:hover{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    transform: scale(1.1);
+}
+
+#title-left{
+    height: 40px;
+    flex: 1;
+    margin-left: 6px;
+    transition: all 2s linear;
+}
+
+
+#three-line{
+    height: 30px;
+    width: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 5px 10px;
+}
+
+#three-line div{
+    background-color: white;
+    height: 2px;
+    width: 18px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+#title-center{
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    color: #e6e6e6;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#title-center div{
+    margin: 0px 15px 0px 15px;
+}
+
+
+#title-right{
+    flex: 1;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#mcphone{
+    width: 25px;
+    height: 25px;
+    background-image: url(../../picture/microphone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 5px 10px 5px 5px;
+}
+
+
+/* title end */
+

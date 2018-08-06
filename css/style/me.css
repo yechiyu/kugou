@@ -1,0 +1,386 @@
+/* search start */
+
+#search{
+    height: 50px;
+    background-color: deepskyblue;
+}
+
+#search-bg{
+    width: 95%;
+    height: 28px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 40px;
+}
+
+#search-magnifier{
+    width: 15px;
+    height: 15px;
+    background-image: url(../../picture/magnifier.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#search-content{
+    font-size: 14px;
+    color: #e6e6e6;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+/* search end */
+
+
+
+/* personal-data start */
+
+#personal-data{
+    flex: 1;
+    /*display: flex;*/
+    /*flex-flow: column nowrap;*/
+    /*justify-content: space-between;*/
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    overflow: scroll;
+}
+
+
+#personal-data-information{
+    height: 90px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+#personal-data-information-left{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+#personal-data-information-left img{
+    width: 90%;
+    height: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#personal-data-information-center{
+    flex: 1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+#personal-data-information-center-name{
+    height: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    /*justify-content: flex-start;*/
+    font-size: 14px;
+}
+
+#personal-data-information-center-name-left{
+    /*flex: 1;*/
+    height: 25px;
+    max-width: 120px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #212121;
+}
+
+#personal-data-information-center-name-right{
+    color: white;
+    width: 25px;
+    height: 13px;
+    background-color: #cdcdcd;
+    border-radius: 15px;
+    font-style: italic;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+#personal-data-information-center-msg{
+    height: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 9px;
+}
+
+#personal-data-information-center-msg-left{
+    width: 30px;
+    height: 13px;
+    color: coral;
+    border: 1px solid coral;
+    border-radius: 2px;
+}
+
+#personal-data-information-center-msg-right{
+    flex: 1;
+    color: #cdcdcd;
+    margin-left: 5px;
+}
+
+
+#personal-data-information-right{
+    width: 20px;
+    height: 15px;
+    margin-right: 20px;
+    background-image: url(../../picture/envelop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#personal-data-menu{
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: 5px solid;
+    border-color: rgba(205,205,205,0.35);
+    align-items: center;
+}
+
+.personal-data-menu-option{
+    margin: 5px;
+    width: 60px;
+    height: 90px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.personal-data-menu-option-top{
+    height: 35px;
+    width: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: -10px;
+}
+
+.personal-data-menu-option-center{
+    height: 20px;
+    font-size: 12px;
+    color: #212121;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.personal-data-menu-option-bottom{
+    height: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-top: -10px;
+    color: gray;
+}
+
+#personal-data-option{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+.personal-data-option-works{
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+}
+
+.personal-data-option-works-left{
+    height: 25px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #212121;
+    font-weight: 400;
+}
+
+.personal-data-option-works-right{
+    height: 25px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #cdcdcd;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+#personal-data-option-song_sheet{
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+}
+
+#personal-data-option-song_sheet-left{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    height: 25px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #212121;
+    font-weight: 400;
+}
+
+#gt-down{
+    transform: rotate(90deg);
+    height: 25px;
+    font-size: 14px;
+    color: #cdcdcd;
+    font-weight: 300;
+}
+#gt-up{
+    margin-left: 5px;
+    transform: rotate(-90deg);
+    height: 25px;
+    font-size: 14px;
+    color: #cdcdcd;
+    font-weight: 300;
+    display: none;
+}
+
+
+#personal-data-option-song_sheet-right{
+    height: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal-data-option-song_sheet-right-icon{
+    height: 17px;
+    width: 17px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 5px 10px 5px 10px;
+}
+
+
+#personal-data-option-select{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin: 0px 5px 0px 5px;
+    display: none;
+}
+
+.personal-data-option-select-msg{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0px 5px 0px 5px;
+}
+
+.personal-data-option-select-msg-left{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.personal-data-option-select-msg-hr{
+    flex: 1;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.personal-data-option-select-msg-left img{
+    height: 25px;
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.personal-data-option-select-msg-center{
+    flex: 1;
+    height: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+.personal-data-option-select-msg-center-title{
+    height: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+
+.personal-data-option-select-msg-center-subtitle{
+    height: 15px;
+    font-size: 8px;
+    line-height: 15px;
+    color: #cdcdcd;
+}
+
+.personal-data-option-select-msg-right{
+    width: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.personal-data-option-select-msg-right div{
+    background-color: #cdcdcd;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+
+
+
+
+
+#personal-data-option-extension{
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+}
+
+#personal-data-option-extension-center{
+    flex: 1;
+    height: 25px;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    margin-right: 8px;
+    font-size: 10px;
+    color: #cdcdcd;
+    font-weight: 300;
+}
+
+/* personal-data end */

@@ -1,0 +1,161 @@
+
+/*notice start*/
+#notice{
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: deepskyblue;*/
+}
+
+
+#notice-left{
+    height: 25px;
+    width: 25px;
+}
+
+#notice-left img{
+    height: 23px;
+    width: 23px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
+#notice-center{
+    height: 30px;
+    flex: 1;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+#notice-right{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5px;
+}
+
+#notice-right div{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/*notice end*/
+
+
+
+/*news-menu start*/
+
+#news-menu{
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: white;
+}
+
+#news-menu-option{
+
+    width: 93%;
+    height: 30px;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#news-menu-option div{
+    width: 25%;
+    height: 27px;
+    border: 1px solid deepskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: deepskyblue;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/*news-menu end*/
+
+/*news-content start*/
+
+#news-content{
+    flex: 1;
+    background-color: white;
+}
+
+#news-content a{
+    text-decoration: none;
+}
+
+.news-msg{
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-msg-left{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+
+}
+
+.news-msg-hr{
+    height: 80px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.news-msg-content{
+    flex: 1;
+    height: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    color: #212121;
+}
+
+.news-msg-content-title{
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.news-msg-content-subtitle{
+    height: 20px;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.news-msg-right{
+    width: 80px;
+    height: 45px;
+    font-size: 5px;
+    color: #cdcdcd;
+}
+
+/*news-content end*/

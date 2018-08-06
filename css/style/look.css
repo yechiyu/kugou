@@ -1,0 +1,38 @@
+
+
+/* look-menu start */
+#look-menu{
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: deepskyblue;
+}
+
+.look-menu-button{
+    height: 40px;
+    width: 120px;
+    color: #e6e6e6;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* look-menu end */
+
+
+
+
+
+
+/* look-content */
+#look-content{
+    flex: 1;
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+    overflow: scroll;
+    /*display: flex;*/
+    /*flex-flow: column nowrap;*/
+    /*justify-content: flex-start;*/
+}
+/* look-content */

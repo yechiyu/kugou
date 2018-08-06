@@ -1,0 +1,146 @@
+/* player-simple start */
+
+#player-simple{
+    height: 60px;
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0px 0px 2px gainsboro;
+}
+
+#player-simple-cover{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #cdcdcd;
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    margin-left: 3px;
+}
+
+@keyframes circle {
+    0%{
+
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#player-simple-cover img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: circle 20s linear infinite;
+}
+
+#player-simple-machine{
+    width: 78%;
+    height: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+
+#player-progressbar{
+    height: 8px;
+}
+
+
+#player-information{
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 40px;
+    justify-content: space-between;
+}
+
+#player-information-name{
+    flex: 1;
+    height: 36px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+#player-information-name-title{
+    font-size: 14px;
+    height: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #212121;
+}
+
+#player-information-name-subtitle{
+    height: 16px;
+    font-size: 10px;
+    line-height: 16px;
+    color: #cdcdcd;
+}
+
+#player-information-music{
+    width: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#player-information-music div{
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*#player-information-music:first-child{*/
+    /*height: 25px;*/
+    /*width: 20px;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+/*}*/
+
+@keyframes scroll {
+    0%{
+        width: 1%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+#player-scrollbar{
+    width: 100%;
+    height: 2px;
+    background-color: darkgray;
+    border-radius: 2px;
+}
+
+#player-scrollbar-cover{
+    width: 100%;
+    height: 2px;
+    background-color: deepskyblue;
+    border-radius: 1px;
+    position: relative;
+    animation: scroll 100s linear infinite;
+}
+
+#player-scrollbar-cover-circle{
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    right: 0px;
+    top: -3px;
+    border-radius: 50%;
+    border: 1px solid deepskyblue;
+    background-color: white;
+}
+/* player-simple end */

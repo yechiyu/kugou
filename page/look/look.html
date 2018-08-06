@@ -1,0 +1,44 @@
+
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="../../css/style/look.css">
+
+
+<!-- look-menu start -->
+<div id="look-menu">
+    <div class="look-menu-button border xy-center" data-send="../../page/scene/scene.html">直播</div>
+    <div class="look-menu-button border xy-center" data-send="../../page/short-view/short-view.html">短视频</div>
+    <div class="look-menu-button border xy-center" data-send="../../page/mv/mv.html">MV</div>
+</div>
+<!-- look-menu end -->
+
+
+
+<!-- look-content start -->
+<div id="look-content"></div>
+<!-- look-content end -->
+
+<script>
+
+    $(function(){
+
+        $("#look-content").load("../../page/scene/scene.html")
+
+
+
+        //切换
+        $(".look-menu-button").click(function() {
+
+
+
+            $("#look-content").load($(this).data("send"), function(){
+
+            })
+
+
+
+        })
+
+
+    })
+</script>

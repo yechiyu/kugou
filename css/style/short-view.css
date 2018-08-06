@@ -1,0 +1,246 @@
+#look-content-short_view-title{
+    height: 60px;
+    border-bottom: 5px solid;
+    border-color: rgba(205,205,205,0.35);
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+
+    overflow: hidden;
+}
+
+
+@keyframes roll {
+    0%,8%{
+        margin-top: 0px;
+    }
+    10%,18%{
+        margin-top: -60px;
+    }
+
+    20%,28%{
+        margin-top: -120px;
+    }
+
+    30%,38%{
+        margin-top: -180px;
+    }
+
+    40%,48%{
+        margin-top: -240px;
+    }
+    50%,58%{
+        margin-top: -300px;
+    }
+    60%,68%{
+        margin-top: -240px;
+    }
+
+    70%,78%{
+        margin-top: -180px;
+    }
+
+    80%,88%{
+        margin-top: -120px;
+    }
+
+    90%,98%{
+        margin-top: -60px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+#look-content-short_view-title{
+    height: 60px;
+
+}
+
+
+#look-content-short_view-title-container{
+    height: 360px;
+
+    animation: roll 30s linear infinite;
+
+    overflow: scroll;
+}
+
+
+
+
+.look-content-short_view-title-msg{
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.look-content-short_view-title-msg-left{
+    margin-left: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.look-content-short_view-title-msg-left img{
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.look-content-short_view-title-msg-center{
+    flex: 1;
+    height: 34px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.look-content-short_view-title-msg-center-title{
+    height: 17px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+.look-content-short_view-title-msg-center-subtitle{
+    height: 17px;
+    font-size: 10px;
+    line-height: 17px;
+    color: #cdcdcd;
+}
+
+
+.look-content-short_view-title-msg-right{
+    height: 40px;
+    width: 40px;
+    color: #cdcdcd;
+}
+
+
+/*  title  */
+
+
+
+#look-content-short_view-content-title{
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.look-content-short_view-content-title-button{
+    height: 85px;
+    width: 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.look-content-short_view-content-title-button-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.look-content-short_view-content-title-button-text{
+    margin-top: -12px;
+}
+
+.look-content-short_view-content-title-button-icon img{
+
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#look-content-short_view-video{
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+}
+
+.look-content-short_view-video-msg{
+    margin-left: 5px;
+    height: 250px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.look-content-short_view-video-msg-left{
+    width: 180px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.look-content-short_view-video-msg-right{
+    width: 180px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+
+.look-content-short_view-video-msg-img{
+    border-radius: 5px;
+    height: 200px;
+    width: 170px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.look-content-short_view-video-msg--title{
+    height: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.look-content-short_view-video-msg-subtitle{
+    height: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.look-content-short_view-video-msg-subtitle-play{
+    height: 22px;
+    width: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 8px;
+    font-weight: 200;
+    line-height: 22px;
+}
+
+.look-content-short_view-video-msg-subtitle-play img{
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
