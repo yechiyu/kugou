@@ -21,6 +21,11 @@
     margin-left: 3px;
 }
 
+
+.player-play {
+    animation: circle 20s linear infinite;
+}
+
 @keyframes circle {
     0%{
 
@@ -37,7 +42,7 @@
     border-radius: 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: circle 20s linear infinite;
+    /*animation: circle 20s linear infinite;*/
 }
 
 #player-simple-machine{
@@ -107,6 +112,10 @@
     /*background-repeat: no-repeat;*/
 /*}*/
 
+.player-play-s{
+    animation: scroll 273s linear infinite;
+}
+
 @keyframes scroll {
     0%{
         width: 1%;
@@ -130,7 +139,8 @@
     background-color: deepskyblue;
     border-radius: 1px;
     position: relative;
-    animation: scroll 100s linear infinite;
+    display: none;
+    /*animation: scroll 273s linear infinite;*/
 }
 
 #player-scrollbar-cover-circle{
@@ -142,5 +152,6 @@
     border-radius: 50%;
     border: 1px solid deepskyblue;
     background-color: white;
+    display: none;
 }
 /* player-simple end */
